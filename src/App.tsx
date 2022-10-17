@@ -4,7 +4,6 @@ import ChatPage from "./components/ChatPage";
 import io from "socket.io-client";
 import "./App.css";
 
-//@ignore-ts
 const socket = io("https://ranjan-socketio.herokuapp.com");
 function App() {
   return (
