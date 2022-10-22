@@ -1,7 +1,8 @@
 import React, { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Socket } from "socket.io-client";
 
-const Home = ({ socket }: any) => {
+const Home = ({ socket }: Socket) => {
   const navigate = useNavigate();
   const [userName, setUserName] = useState("");
 
